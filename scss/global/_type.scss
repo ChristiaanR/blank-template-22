@@ -1,0 +1,12 @@
+@use 'abstracts' as a;
+
+body {
+	font-family: a.$fnt-body-text;
+}
+h1,
+h2,
+h3,
+h4,
+.heading {
+	font-family: a.$fnt-h-text;
+}

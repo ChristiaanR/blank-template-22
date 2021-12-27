@@ -1,0 +1,9 @@
+@use 'abstracts' as a;
+
+:root {
+	color-scheme: light dark;
+}
+
+body {
+	color: a.$clr-primary;
+}

@@ -1,0 +1,12 @@
+// Fonts
+
+$fnt-serif: 'Faustina', serif;
+$fnt-sans: 'Libre Franklin', sans-serif;
+
+$fnt-body-text: $fnt-sans;
+$fnt-h-text: $fnt-serif;
+
+// Colors
+
+$clr-primary: hsl(170 79 23);
+$clr-accent: rotate($clr-primary, 180deg);
