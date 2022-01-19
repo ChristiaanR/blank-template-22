@@ -298,6 +298,10 @@ h4,
 		font-family: "Faustina", serif;
 }
 
+.cols {
+		display: grid;
+}
+
 .skip-link {
 		position: absolute;
 		top: 0;
@@ -312,12 +316,88 @@ h4,
 		transform: translateY(0);
 }
 
+.cards {
+		list-style-type: none;
+		padding-left: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+		gap: 1rem;
+}
+
+nav ul {
+		list-style-type: none;
+		padding-left: 0;
+}
+
 :root {
 		color-scheme: light dark;
 }
 
 body {
-		color: #0c695a;
+		color: var(--txt-color, #333);
+		background: var(--bg-color, #fafafa);
+}
+
+.clr1 {
+		background: var(--clr1);
+}
+
+.clr2 {
+		background: var(--clr2);
+}
+
+.clr3 {
+		background: var(--clr3);
+}
+
+.clr4 {
+		background: var(--clr4);
+}
+
+.clr5 {
+		background: var(--clr5);
+}
+
+.clr6 {
+		background: var(--clr6);
+}
+
+@media (prefers-color-scheme: light) {
+		:root {
+				--bg-color: #610c69;
+				--txt-color: red;
+				--clr1: #b1f6ea;
+				--clr2: #073b33;
+				--clr3: #f5c8f9;
+				--clr4: #220425;
+				--clr5: #0c695a;
+				--clr6: #610c69;
+		}
+}
+@media (prefers-color-scheme: dark) {
+		:root {
+				--txt-color: green;
+				--bg-color: #0c695a;
+				--clr1: #0c695a;
+				--clr2: #610c69;
+				--clr3: #b1f6ea;
+				--clr4: #073b33;
+				--clr5: #f5c8f9;
+				--clr6: #220425;
+		}
+}
+.color-blocks {
+		border: 2px dashed green;
+		overflow: auto;
+}
+
+.color-block {
+		float: left;
+		width: 4rem;
+		aspect-ratio: 1;
+		margin: 1rem;
+		margin-inline: 1rem;
+		box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */

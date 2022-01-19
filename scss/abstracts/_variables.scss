@@ -9,4 +9,14 @@ $fnt-h-text: $fnt-serif;
 // Colors
 
 $clr-primary: hsl(170 79 23);
-$clr-accent: rotate($clr-primary, 180deg);
+$clr-accent: hsl(295 79 23);
+$clr-primary--light: hsl(170 79 83);
+$clr-accent--light: hsl(295 79 88);
+$clr-primary--dark: hsl(170 79 13);
+$clr-accent--dark: hsl(295 79 8);
+
+// CSS3 stuff
+
+$border-radius: 0.25rem;
+$border-radius--small: 0.125rem;
+$border-radius--large: 0.5rem;
