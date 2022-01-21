@@ -1,4 +1,5 @@
 @use 'abstracts' as a;
+
 .cards {
 	@include a.clean-list;
 	display: grid;
@@ -7,5 +8,10 @@
 }
 
 .card {
-	border-radius: $border-radius;
+	border-radius: a.$border-radius--large;
+	overflow: hidden;
+}
+.card-title,
+.card-body {
+	padding-inline: 1rem;
 }

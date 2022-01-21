@@ -287,6 +287,7 @@ html {
 }
 
 body {
+		line-height: 1.6;
 		font-family: "Libre Franklin", sans-serif;
 }
 
@@ -296,6 +297,17 @@ h3,
 h4,
 .heading {
 		font-family: "Faustina", serif;
+		line-height: 1;
+}
+
+p,
+ul,
+ol {
+		margin-bottom: 0.5rem;
+}
+
+body {
+		padding-inline: 2rem;
 }
 
 .cols {
@@ -322,6 +334,16 @@ h4,
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 		gap: 1rem;
+}
+
+.card {
+		border-radius: 1rem;
+		overflow: hidden;
+}
+
+.card-title,
+.card-body {
+		padding-inline: 1rem;
 }
 
 nav ul {
@@ -376,8 +398,8 @@ body {
 }
 @media (prefers-color-scheme: dark) {
 		:root {
-				--txt-color: green;
-				--bg-color: #0c695a;
+				--txt-color: #fafafa;
+				--bg-color: #220425;
 				--clr1: #0c695a;
 				--clr2: #610c69;
 				--clr3: #b1f6ea;
@@ -386,6 +408,11 @@ body {
 				--clr6: #220425;
 		}
 }
+.card {
+		background: #610c69;
+		box-shadow: 0 0.5rem 0.5rem rgba(5, 5, 5, 0.2);
+}
+
 .color-blocks {
 		border: 2px dashed green;
 		overflow: auto;
@@ -398,6 +425,10 @@ body {
 		margin: 1rem;
 		margin-inline: 1rem;
 		box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+footer {
+		margin-top: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
